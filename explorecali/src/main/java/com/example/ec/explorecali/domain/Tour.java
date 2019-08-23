@@ -44,10 +44,13 @@ public class Tour implements Serializable {
 	@ManyToOne
 	private TourPackage tourPackage;
 
-	public Tour(Integer id, String title, String description, String blurb, Integer price, String duration,
-			String bullets, String keywords, Region region, TourPackage tourPackage) {
+	public Tour() {
+
+	}
+
+	public Tour(String title, String description, String blurb, Integer price, String duration, String bullets,
+			String keywords, Region region, TourPackage tourPackage) {
 		super();
-		this.id = id;
 		this.title = title;
 		this.description = description;
 		this.blurb = blurb;

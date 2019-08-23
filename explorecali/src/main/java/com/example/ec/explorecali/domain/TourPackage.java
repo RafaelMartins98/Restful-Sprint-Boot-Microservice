@@ -17,6 +17,10 @@ public class TourPackage implements Serializable {
 	@Column
 	private String name;
 
+	
+    protected TourPackage() {
+    }
+    
 	public TourPackage(String code, String name) {
 		super();
 		this.code = code;
